@@ -4,8 +4,10 @@ Generate a React Native component based on a name and an optional target directo
 
 ```
 Usage: 
-    reactcomp <component name> <optional target directory>
+    reactcomp <component name> <optional target directory> <optional extension>
 
-Example:
-    reactcomp MyComponent components
+Examples:
+    reactcomp MyComponent
+    reactcomp MyComponent components/ .js
+    reactcomp MyComponent components/ .android.js
 ```
