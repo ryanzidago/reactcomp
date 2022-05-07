@@ -38,7 +38,7 @@ fn main() {
 
 fn create_component_as_string(component_name: &str) -> String {
     "
-import {View, Stylesheet} from 'react-native';
+import {View, StyleSheet} from 'react-native';
     
 const TemplateComponent = ({}) => {
     return (
@@ -47,7 +47,7 @@ const TemplateComponent = ({}) => {
     )
 }
     
-const styles = Stylesheet.create({
+const styles = StyleSheet.create({
     container: {}
 })
     
