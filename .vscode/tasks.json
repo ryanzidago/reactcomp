@@ -1,0 +1,38 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "reactcomp",
+      "type": "shell",
+      "command": "reactcomp",
+      "args": [
+        "${input:componentName}",
+        "${input:targetDirectory}"
+      ],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      },
+      
+    }
+  ],
+  "inputs": [
+    {
+      "type": "promptString",
+      "id": "componentName",
+      "description": "Name your component",
+    },
+    {
+      "type": "promptString",
+      "id": "targetDirectory",
+      "default": ".",
+      "description": "The directory where your component should be created"
+    }
+  ]
+}

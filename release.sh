@@ -1,0 +1,1 @@
+(cargo build --release) && (cp -r ./target/release/reactcomp ~/bin)
