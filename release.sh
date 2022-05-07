@@ -1,1 +1,1 @@
-(cargo build --release) && (cp -r ./target/release/reactcomp ~/bin)
+(cargo build --release) && (cp -r ./target/release/reactcomp ~/bin) && (echo "Released reactcomp to ~/bin")
