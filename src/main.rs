@@ -44,11 +44,12 @@ fn main() {
 
 fn create_component_as_string(component_name: &str) -> String {
     "
-import {View, StyleSheet} from 'react-native';
+import {View, StyleSheet, Text} from 'react-native';
     
 const TemplateComponent = ({}) => {
     return (
         <View style={styles.container}>
+          <Text></Text>
         </View>
     )
 }
